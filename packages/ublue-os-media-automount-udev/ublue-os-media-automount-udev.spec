@@ -7,8 +7,8 @@ Summary:        udev rules to mount non-removable disk partitions
 License:        Apache-2.0
 URL:            https://github.com/ublue-os/packages
 
-#VCS:            {{{ git_dir_vcs }}}
-#Source0:        {{{ git_dir_pack }}}
+VCS:            {{{ git_dir_vcs }}}
+Source0:        {{{ git_dir_pack }}}
 
 BuildArch:      noarch
 Supplements:    systemd-udev
