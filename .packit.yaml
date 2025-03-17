@@ -6,6 +6,9 @@ packages:
     paths: ["./packages/ublue-os-media-automount-udev"]
     specfile_path: "ublue-os-media-automount-udev.spec"
 
+actions:
+  fix-spec-file:
+    - bash -c "rpkg spec --sources --outdir ."
 jobs:
   - job: copr_build
     trigger: pull_request
