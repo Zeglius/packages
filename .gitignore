@@ -4,3 +4,4 @@ rpmbuild/
 brew-out/
 arch_skipped
 overlays/
+prepare_sources_result*/

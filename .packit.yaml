@@ -1,0 +1,13 @@
+# See the documentation for more information:
+# https://packit.dev/docs/configuration/
+
+packages:
+  ublue-os-media-automount-udev:
+    paths: ["./packages/ublue-os-media-automount-udev"]
+    specfile_path: "packages/ublue-os-media-automount-udev/ublue-os-media-automount-udev.spec"
+
+jobs:
+  - job: copr_build
+    trigger: pull_request
+    targets:
+      - fedora-rawhide
