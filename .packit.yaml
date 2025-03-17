@@ -4,7 +4,7 @@
 packages:
   ublue-os-media-automount-udev:
     paths: ["./packages/ublue-os-media-automount-udev"]
-    specfile_path: "packages/ublue-os-media-automount-udev/ublue-os-media-automount-udev.spec"
+    specfile_path: "ublue-os-media-automount-udev.spec"
 
 jobs:
   - job: copr_build
