@@ -7,7 +7,7 @@ packages:
     specfile_path: "ublue-os-media-automount-udev.spec"
 
 actions:
-  fix-spec-file:
+  post-upstream-clone:
     - bash -c "rpkg spec --sources --outdir ."
 jobs:
   - job: copr_build
