@@ -47,10 +47,10 @@ jobs:
   - <<: *job-rpm-on-pr
     trigger: commit
     branch: main
+    <<: *project-packages
 
 packages:
   ublue-os-media-automount-udev:
     downstream_package_name: ublue-os-media-automount-udev
     paths: [ "./packages/ublue-os-media-automount-udev" ]
     specfile_path: "ublue-os-media-automount-udev.spec"
-    <<: *project-packages
