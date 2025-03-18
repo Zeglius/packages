@@ -8,6 +8,7 @@ packages:
 
 actions:
   post-upstream-clone:
+    - dnf install -y rpkg
     - bash -c "rpkg spec --sources --outdir ."
 jobs:
   - job: copr_build
