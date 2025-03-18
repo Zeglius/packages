@@ -6,6 +6,9 @@ packages:
     paths: [ "./packages/ublue-os-media-automount-udev" ]
     specfile_path: "ublue-os-media-automount-udev.spec"
 
+srpm_build_deps:
+  - rpkg
+
 actions:
   post-upstream-clone:
     - bash -c "rpkg spec --sources --outdir ."
@@ -13,6 +16,4 @@ jobs:
   - job: copr_build
     trigger: pull_request
     targets:
-      fedora-rawhide:
-        additional_packages: &deps
-          - rpkg
+      - fedora-rawhide
