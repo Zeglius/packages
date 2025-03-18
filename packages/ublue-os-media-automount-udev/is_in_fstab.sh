@@ -8,4 +8,5 @@ while read -r _what _; do
     [[ $_what =~ ^#.* ]] && continue
     [[ $(findfs $"$_what") == "$dev" ]] && { echo "yes"; exit 0; }
 done </etc/fstab
+echo >&2 woa
 echo "no" && exit 0
