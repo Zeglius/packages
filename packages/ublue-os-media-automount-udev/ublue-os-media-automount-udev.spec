@@ -1,6 +1,6 @@
 Name:           ublue-os-media-automount-udev
 Vendor:         ublue-os
-Version:        0.7
+Version:        0.8
 Release:        1%{?dist}
 Summary:        udev rules to mount non-removable disk partitions
 
@@ -13,6 +13,7 @@ Source0:        {{{ git_dir_pack }}}
 BuildArch:      noarch
 Supplements:    systemd-udev
 BuildRequires:  systemd-rpm-macros
+Requires:       systemd-udev
 
 %description
 %{summary}
